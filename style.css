@@ -1,0 +1,157 @@
+@charset "UTF-8";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+:root {
+  --cor-01: #bda5bd;
+  --cor-02: #8c628c;
+  --cor-03: #69495f;
+  --cor-04: #d2b48c;
+
+  --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--cor-01);
+  font-family: var(--font-padrao);
+}
+
+header {
+  background-color: var(--cor-03);
+  min-height: 120px;
+  text-align: center;
+  padding-top: 40px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  color: white;
+  font-family: var(--font-destaque);
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.267);
+}
+
+strong {
+  background-color: var(--cor-02);
+  transition-duration: 1s;
+}
+
+nav {
+  padding: 20px;
+  text-align: left;
+}
+
+nav > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #4e324e;
+}
+
+section {
+  background-color: var(--cor-04);
+  border-radius: 20px;
+  max-width: 1000px;
+  min-width: 300px;
+  margin: auto;
+  margin-top: 50px;
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+main img {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding: 20px;
+}
+
+#frases {
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 30px 50px;
+  text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+#frases p {
+    text-align: justify;
+}
+
+.relogio {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    max-width: 550px;
+    background-color: var(--cor-02);
+    border-radius: 3px;
+    box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.4);
+    position: relative;
+    margin: 30px auto 100px auto;
+}
+
+.relogio div {
+    height: 170px;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .7);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.relogio span {
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.relogio span.timer {
+    font-size: 15px;
+}
+
+footer {
+  background-color: var(--cor-03);
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 1.3em;
+}
+
+footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: white;
+  background-color: #4e324e;
+}
